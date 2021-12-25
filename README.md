@@ -5,7 +5,7 @@
 ### Front-end
 
 - Typescript
-- Nextjs
+- React/Nextjs
 - Apollo Client
 - Graphql
 - SCSS

@@ -1,0 +1,32 @@
+.detail {
+  margin-bottom: var(--space-md);
+
+  .detailTitle {
+    display: flex;
+    align-items: center;
+    margin-bottom: var(--space-sm);
+
+    .detailIcon {
+      margin-right: var(--space-sm);
+    }
+  }
+
+  span {
+    text-transform: capitalize;
+  }
+}
+
+.deleteButton {
+  margin-top: var(--space-md);
+
+  span {
+    margin-left: var(--space-sm);
+  }
+}
+
+.loading {
+  width: 100%;
+  border-radius: var(--rounded-lg);
+  background-color: var(--gray-10);
+  height: 400px;
+}

@@ -1,0 +1,13 @@
+.card {
+  background-color: var(--white);
+  border-radius: var(--rounded-lg);
+  padding: var(--space-xl);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  color: var(--black);
+
+  .cardTitle {
+    font-weight: 700;
+    font-size: var(--size-md);
+    margin-bottom: var(--space-lg);
+  }
+}

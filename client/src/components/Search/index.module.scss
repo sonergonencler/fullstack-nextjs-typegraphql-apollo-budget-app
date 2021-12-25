@@ -1,0 +1,93 @@
+@mixin input-container {
+  position: relative;
+  width: 100%;
+  height: 2.5rem;
+}
+
+@mixin input-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  margin: 0 var(--space-sm);
+  color: var(--gray-40);
+  pointer-events: none;
+
+  svg {
+    width: var(--size-sm);
+    height: var(--size-sm);
+  }
+}
+
+@mixin input {
+  width: 100%;
+  height: 2.5rem;
+  border: 1px solid var(--border);
+  padding: 0 var(--space-md);
+  padding-left: var(--space-md);
+  padding-right: 40px;
+
+  &::placeholder {
+    font-size: var(--size-sm);
+    color: var(--gray-40);
+  }
+
+  &:focus {
+    border-color: var(--gray-40);
+    border-width: 1px;
+  }
+}
+
+.search {
+  width: 100%;
+
+  .inputContainer {
+    @include input-container;
+
+    .inputIcon {
+      @include input-icon;
+    }
+
+    .input {
+      @include input;
+      border-radius: var(--rounded-xl);
+    }
+  }
+}
+
+.searchModal {
+  .inputContainer {
+    @include input-container;
+
+    .inputIcon {
+      @include input-icon;
+    }
+
+    .input {
+      @include input;
+      border-radius: var(--rounded-md);
+    }
+  }
+
+  .results {
+    .result {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: var(--size-sm);
+      padding: var(--space-md);
+      margin-top: var(--space-sm);
+      border-radius: var(--rounded-md);
+      text-transform: capitalize;
+      border: 1px solid var(--gray-10);
+
+      &:hover {
+        border-color: var(--gray-40);
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+mutation CreateTransaction($input: TransactionInput!) {
+  createTransaction(input: $input) {
+    _id
+    name
+    type
+    amount
+    date
+    creator {
+			_id
+      username
+		}
+  }
+}

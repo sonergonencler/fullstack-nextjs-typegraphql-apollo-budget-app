@@ -1,0 +1,12 @@
+.formContainer {
+  width: 100%;
+
+  .info {
+    font-size: var(--size-sm);
+    margin-bottom: var(--space-md);
+  }
+
+  .submitButton {
+    margin-bottom: var(--space-sm);
+  }
+}

@@ -1,0 +1,13 @@
+query MonthlyTransactions($limit: Int) {
+  monthlyTransactions(limit: $limit) {
+    _id
+    name
+    amount
+    type
+    date
+    creator {
+      _id
+      username
+    }
+  }
+}

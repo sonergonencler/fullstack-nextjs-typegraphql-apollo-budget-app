@@ -1,0 +1,20 @@
+{
+  "name": "budget-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "build": "yarn workspace @budget-app/client run build",
+    "start": "yarn workspace @budget-app/server run start",
+    "dev": "yarn workspace @budget-app/server run dev"
+  },
+  "workspaces": [
+    "server",
+    "client"
+  ],
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {}
+}

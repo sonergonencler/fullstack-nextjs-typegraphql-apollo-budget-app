@@ -1,0 +1,8 @@
+mutation Signin($input: UserInput!) {
+  signin(input: $input) {
+    user {
+      _id
+      username
+    }
+  }
+}

@@ -1,0 +1,13 @@
+ query Search($input: String!) {
+  search(input: $input) {
+    _id
+    name
+    amount
+    type
+    date
+    creator {
+      _id
+      username
+    }
+  }
+}

@@ -1,0 +1,25 @@
+.pageHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: var(--space-md);
+  margin-bottom: var(--space-md);
+
+  .title {
+    h1 {
+      font-size: var(--size-xl);
+      font-weight: 700;
+    }
+  }
+
+  .addButton {
+    span {
+      display: none;
+
+      @media only screen and (min-width: 768px) {
+        margin-left: var(--space-sm);
+        display: block;
+      }
+    }
+  }
+}

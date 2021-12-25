@@ -1,0 +1,83 @@
+.transactionList {
+  .heading {
+    display: none;
+
+    @media only screen and (min-width: 768px) {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: var(--space-lg);
+    }
+  }
+
+  .list {
+    @media only screen and (min-width: 768px) {
+      padding-top: var(--space-lg);
+    }
+
+    .listItem {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      overflow-x: hidden;
+      padding-bottom: var(--space-sm);
+      margin-bottom: var(--space-lg);
+      border-bottom: 1px solid var(--border);
+
+      &:nth-last-of-type(1){
+        margin-bottom: 0;
+      }
+
+      @media only screen and (min-width: 768px) {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: var(--space-lg);
+        padding: 0;
+        border: 0;
+        margin-bottom: var(--space-sm);
+      }
+
+      .listItemCol {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        overflow-x: hidden;
+        margin-bottom: var(--space-sm);
+
+        @media only screen and (min-width: 768px) {
+          padding: 0;
+        }
+
+        .listItemHead {
+          display: block;
+          margin-right: var(--space-lg);
+
+          @media only screen and (min-width: 768px) {
+            display: none;
+          }
+        }
+
+        .listItemVal {
+          display: inline-block;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          overflow-x: hidden;
+          text-transform: capitalize;
+        }
+
+        .listItemLink {
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}
+
+.loading {
+  width: 100%;
+  border-radius: var(--rounded-lg);
+  background-color: var(--gray-10);
+  height: 400px;
+}

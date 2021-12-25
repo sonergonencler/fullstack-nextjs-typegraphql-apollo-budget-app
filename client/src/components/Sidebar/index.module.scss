@@ -1,0 +1,28 @@
+.sidebar {
+  display: none;
+  background-color: var(--dark-blue);
+  padding: 0 var(--space-md);
+
+  @media only screen and (min-width: 768px) {
+    display: block;
+  }
+
+  .round {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75px;
+
+    .roundInner {
+      min-width: 1rem;
+      width: 1rem;
+      height: 1rem;
+      background-color: var(--blue);
+      border-radius: var(--rounded-full);
+    }
+  }
+
+  .nav {
+    padding: var(--space-md) 0;
+  }
+}

@@ -1,0 +1,27 @@
+.detail {
+  margin-bottom: var(--space-md);
+
+  .detailTitle {
+    display: flex;
+    align-items: center;
+    margin-bottom: var(--space-sm);
+  }
+
+  &:nth-last-of-type(1) {
+    margin-bottom: 0;
+  }
+}
+
+.headerLoading {
+  width: 100%;
+  background-color: var(--gray-10);
+  height: 70px;
+  margin-bottom: var(--space-lg);
+}
+
+.loading {
+  width: 100%;
+  border-radius: var(--rounded-lg);
+  background-color: var(--gray-10);
+  height: 400px;
+}

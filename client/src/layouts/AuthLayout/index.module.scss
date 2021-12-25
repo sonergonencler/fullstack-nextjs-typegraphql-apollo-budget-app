@@ -1,0 +1,73 @@
+.authContainer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: var(--white);
+  width: 100vw;
+  height: 100vh;
+
+  @media screen and (min-width: 768px) {
+    align-items: center;
+    background-color: var(--dark-blue);
+  }
+
+  .authBody {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: var(--space-xl);
+    background-color: var(--white);
+    border-radius: var(--rounded-lg);
+
+    @media screen and (min-width: 768px) {
+      width: 350px;
+    }
+
+    .heading {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: var(--space-lg);
+
+      .title {
+        display: flex;
+        align-items: center;
+        font-size: var(--size-md);
+
+        .round {
+          margin-right: var(--space-sm);
+          min-width: 1rem;
+          width: 1rem;
+          height: 1rem;
+          background-color: var(--blue);
+          border-radius: var(--rounded-full);
+        }
+      }
+    }
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.loadingWrapper {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .loading {
+    border: 2px solid #f7f7f7;
+    border-top: 2px solid #333;
+    border-radius: var(--rounded-full);
+    width: 2rem;
+    height: 2rem;
+    animation: spin 1s linear infinite;
+  }
+}

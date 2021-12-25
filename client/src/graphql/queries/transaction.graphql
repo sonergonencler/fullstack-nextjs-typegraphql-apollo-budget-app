@@ -1,0 +1,13 @@
+query Transaction($transactionId: ID!) {
+  transaction(transactionId: $transactionId) {
+    _id
+    name
+    amount
+    type
+    date
+    creator {
+      _id
+      username
+    }
+  }
+}

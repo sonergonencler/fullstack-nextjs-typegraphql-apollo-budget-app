@@ -43,7 +43,7 @@ const TransactionDetail: NextPage<{ id: string }> = ({ id }) => {
   return (
     <Fragment>
       <AppLayout title={data?.transaction?.name}>
-        <PageHeader title={getFormattedDate()} subTitle='Transaction Detail' />
+        <PageHeader title={getFormattedDate(data?.transaction?.date)} subTitle='Transaction Detail' />
         <ThemeCard title={data?.transaction?.name}>
           <div className={styles.detail}>
             <div className={styles.detailTitle}>

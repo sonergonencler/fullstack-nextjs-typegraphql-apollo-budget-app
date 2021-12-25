@@ -86,8 +86,11 @@ export class TransactionResolver {
 
     const fixedAmount = Math.round(transactionInput.amount * 1e2) / 1e2;
 
+    const date = Date.now();
+
     const transaction = await TransactionModel.create({
       ...transactionInput,
+      date: date,
       amount: fixedAmount,
       creator: userId,
     } as Transaction);

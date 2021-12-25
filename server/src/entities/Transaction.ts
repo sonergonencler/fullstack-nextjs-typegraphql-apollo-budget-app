@@ -37,7 +37,7 @@ export class Transaction {
     return await this.find({
       date: {
         $gte: start,
-        $lt: end,
+        $lte: end,
       },
       creator: creatorId,
     })

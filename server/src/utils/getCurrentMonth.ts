@@ -1,11 +1,12 @@
 export const getCurrentMonth = () => {
   const date = new Date();
 
-  const startOfMonth = new Date(date.getFullYear(), date.getMonth()).getTime();
-  const endOfMonth = new Date(date.getFullYear(), date.getMonth() + 1, 0).getTime();
+  const start = new Date(date.getFullYear(), date.getMonth());
+  const end = new Date(date.getFullYear(), date.getMonth() + 1, 0);
+  end.setHours(23, 59, 59);
 
   return {
-    startOfMonth,
-    endOfMonth,
+    startOfMonth: start.getTime(),
+    endOfMonth: end.getTime(),
   };
 };

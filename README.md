@@ -1,3 +1,5 @@
+# Fullstack Nextjs TypeGraphQL Apollo Budget App
+
 ![budget](https://user-images.githubusercontent.com/84205265/147385915-ca0fc537-c570-4704-8e9a-66b12f3d6787.png)
 
 ## Tech Stack

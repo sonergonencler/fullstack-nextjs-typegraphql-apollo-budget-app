@@ -20,7 +20,3 @@
 - Apollo Server
 - MongoDB
 - Nodejs
-
-### Live Demo
-
-> https://fullstack-nextjs-budget-app-1a.herokuapp.com
